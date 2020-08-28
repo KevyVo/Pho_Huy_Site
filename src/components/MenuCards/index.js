@@ -32,7 +32,7 @@ const dishs = [
 ]
 
 const bevs = [
-    { image: menuCard1, title: '#56. Hot Coffee', text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' },
+    { image: menuCard1, title: '#56. Hot Coffee', text: 'orem Ipsum is simply dummy text of the printing and typesetting industry.' },
     { image: menuCard2, title: '#57. Ice Coffee', text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' },
     { image: menuCard3, title: '#58 Coke', text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' },
     { image: menuCard4, title: '#59 Leeche', text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' },
