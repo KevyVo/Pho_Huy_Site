@@ -1,0 +1,117 @@
+.faqArea {
+    min-height: 500px;
+    padding-top: 120px;
+    position: relative;
+    margin-bottom: 345px;
+    z-index: 9;
+    background: url(../../images/book/bg/2.jpg) no-repeat center center / cover;
+
+    @media (max-width:991px) {
+        margin-bottom: 0;
+        padding: 120px 0px;
+        background: #fff;
+        min-height: unset;
+        .sectionTitleStyleTwo{
+            h2{
+                color: #5d5e5e;
+                span{
+                    &.line{
+                        background: linear-gradient(90deg, #8cf3fe 0%, #67a9ff 100%);
+                    }
+                }
+            }
+            p{
+                color: #5d5e5e;
+            }
+        }
+    }
+
+
+    &::before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        content: "";
+        opacity: .4;
+        z-index: -9;
+        height: 100%;
+        background: #000;
+        @media (max-width:991px) {
+            display: none;
+        }
+    }
+
+    .bookFaqWrapper {
+        background: #fff;
+        padding: 60px 40px;
+        position: absolute;
+        max-height: 450px;
+        width: 100%;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.03);
+        @media (max-width:991px) {
+            max-height: unset;
+            position: static;
+            padding: 40px 15px;
+        }
+
+        .accordion {
+            padding: 0;
+            .accordion__item{
+                background: transparent;
+                border: none;
+                border-bottom: 1px solid #b5b5b5;
+                border-radius: 0px;
+                padding: 25px 0px;  
+                &:first-child{
+                    padding-top: 0;
+                } 
+                &:last-child{
+                    padding-bottom: 0;
+                    border-bottom: none;
+                }         
+                .accordion__heading{
+                    .accordion__button{
+                        margin-bottom: 0;
+                        cursor: pointer;
+                        font-size: 18px;
+                        font-weight: 700;
+                        position: relative;
+                        display: block;
+                        padding: 0;
+                        background: transparent;
+                        color: #666;
+                        &:focus{
+                            outline: none;
+                        }
+                        &::before{
+                            position: absolute;
+                            right: 0;
+                            top: 8px;
+                        }
+                        @media (max-width:767px) {
+                            font-size: 15px;
+                            line-height: 24px;
+                            padding-right: 40px;
+                        }
+                    }
+                }
+                .accordion__panel{
+                    padding: 0;
+                    p{
+                        padding: 20px 40px 0 0px;
+                        font-weight: 500;
+                        margin-bottom: 0;
+                        @media (max-width:767px) {
+                            padding-right: 0;
+                        }
+                    }
+                }
+            }
+
+            &:last-child {
+                border: none;
+            }
+        }
+    }
+}

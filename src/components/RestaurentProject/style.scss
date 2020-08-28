@@ -1,0 +1,63 @@
+.restaurentProjectArea{
+    background: #f9f9f9;
+    padding: 120px 0px;
+    .galleryMainWrapper{
+        display: flex;
+        flex-wrap: wrap;
+        .gallaryItem{
+            height: 390px;
+            width: 25%;
+            flex:0 0 25%;
+            display: inline-block;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            overflow: hidden;
+            -moz-transition: width 0.8s;
+            -o-transition: width 0.8s;
+            -webkit-transition: width 0.8s;
+            transition: width 0.8s;
+            background-repeat: no-repeat;
+            @media (max-width:1024px) {
+                height: 300px;
+                width: 33.33%;
+                flex: 0 0 33.33%;
+            }
+            @media (max-width:991px) {
+                height: 300px;
+                width: 50%;
+                flex: 0 0 50%;
+            }
+            @media (max-width:500px) {
+                height: 300px;
+                width: 100%;
+                flex: 0 0 100%;
+            }
+            h3{
+                font-size: 16px;
+                text-transform: uppercase;
+                font-weight: 600;
+                margin-bottom: 0;
+                position: absolute;
+                left: 2.5%;
+                bottom: -100px;
+                width: 95%;
+                padding: 30px 0px;
+                text-align: center;
+                background: #fff;
+                -moz-transition: all 0.8s;
+                -o-transition: all 0.8s;
+                -webkit-transition: all 0.8s;
+                transition: all 0.8s;
+            }
+            img{
+                width: 100%;
+            }
+            &:hover{
+                h3{
+                    bottom: 2px;
+                }
+            }
+        }
+    }
+}

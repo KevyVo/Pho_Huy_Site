@@ -1,0 +1,102 @@
+.scheduleArea {
+    background: url(../../images/conferrence/bg/1.jpg) no-repeat center center / cover;
+    padding: 120px 0px;
+
+    .scheduleMenueWrap {
+        justify-content: space-between;
+        text-align: center;
+        border: 10px solid #f6effd;
+        flex-wrap: nowrap;
+        margin-bottom: 45px;
+
+        @media (max-width:480px) {
+            display: block;
+        }
+
+        .scheduleMenueItem {
+            border-left: 10px solid #f6effd;
+            width: 100%;
+
+
+
+            &:first-child {
+                border-left: none;
+            }
+
+            &:last-child {
+                border-right: none;
+            }
+
+            @media (max-width:480px) {
+                border: none;
+                border-bottom: 1px solid #f6effd;
+                margin: 0;
+            }
+
+            a {
+                &.nav-link {
+                    display: block;
+                    padding: 15px 0px;
+                    color: #fff;
+                    line-height: 23px;
+                    font-size: 19px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    background: #ad6ae8;
+                    border-radius: none;
+                    border-top-left-radius: 0rem;
+                    border-top-right-radius: 0rem;
+                    cursor: pointer;
+
+                    @media (max-width:480px) {
+                        border: none;
+                    }
+
+                    &.active {
+                        background: #8747bf;
+                        color: #fff;
+
+                    }
+
+                    span {
+                        display: block;
+                        font-size: 17px;
+                        font-weight: 500;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+        }
+    }
+
+    .tableStyle {
+        color: #666;
+        margin-bottom: 0;
+
+        .tableHead {
+            border: 2px solid #f6effd;
+
+            tr {
+                th {
+                    border-bottom: none;
+                    padding: 15px 0px;
+                    background: #f6effd;
+                    font-weight: 600;
+                    text-align: center;
+                    width: 300px;
+                }
+            }
+        }
+
+        .tableBody {
+            border: 2px solid #f6effd;
+
+            tr {
+                td {
+                    text-align: center;
+                    border-bottom: 1px solid #f6effd;
+                }
+            }
+        }
+    }
+}

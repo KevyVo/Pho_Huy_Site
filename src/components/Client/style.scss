@@ -1,0 +1,32 @@
+.clientArea{
+    padding: 120px 0px;
+    .testContent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        padding-left: 20px;
+        @media (max-width:991px) {
+           margin-top: 40px; 
+           padding-left: 0;
+        }
+        h3{
+            font-size: 24px;
+            font-weight: 600;
+        }
+        h4{
+            font-size: 32px;
+            line-height: 42px;
+            font-weight: 700;
+            margin-bottom: 25px;
+            @media (max-width:767px) {
+                font-size: 24px;
+                line-height: 34px;
+            }
+        }
+        p{
+            margin-bottom: 30px;
+        }
+        a{}
+    }
+}

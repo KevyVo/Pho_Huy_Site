@@ -1,0 +1,173 @@
+.aboutCountdownArea {
+    padding: 120px 0px;
+    background: url(../../images/conferrence/bg/1.png) no-repeat center center / cover;
+    @media (max-width:767px) {
+        padding: 90px 0px 120px;
+    }
+    .aboutWrap {
+        p {
+            font-size: 16px;
+            padding-left: 97px;
+            position: relative;
+
+            @media (max-width:1100px) {
+                margin-bottom: 30px;
+            }
+            @media (max-width:576px) {
+                padding-left: 50px;
+            }
+            &::before {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 67px;
+                height: 100%;
+                background: #8747bf;
+                content: "";
+                @media (max-width:576px) {
+                    width: 20px;
+                }
+            }
+        }
+
+        h3 {
+            font-size: 20px;
+            font-weight: 600;
+            position: relative;
+            display: inline-block;
+
+            &::before {
+                position: absolute;
+                right: -75px;
+                height: 10px;
+                width: 50px;
+                background: #8747bf;
+                content: "";
+                top: 9px;
+            }
+        }
+
+        h2 {
+            font-size: 36px;
+            line-height: 46px;
+            font-weight: 700;
+            margin-bottom: 0;
+            @media (max-width:1100px) {
+                font-size: 30px;
+                line-height: 40px;
+            }
+            @media (max-width:576px) {
+                font-size: 24px;
+                line-height: 35px;
+            }
+        }
+    }
+
+    .counterWrap {
+        text-align: center;
+
+        h2 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 50px;
+            margin-top: 60px;
+            @media (max-width:576px) {
+                font-size: 30px;
+            }
+        }
+
+        span {
+            &.odometer-block {
+                display: flex;
+                justify-content: space-between;
+
+                @media (max-width:480px) {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+
+                >span {
+                    height: 120px;
+                    width: 120px;
+                    border: 1px solid #5d5e5e;
+                    display: flex;
+                    border-radius: 50%;
+                    flex-direction: column;
+                    justify-content: center;
+                    float: left;
+                    box-shadow: 0 0 15px rgba(135, 71, 191, 0.10);
+                    color: #5d5e5e;
+                    font-size: 16px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+
+                    @media (max-width:580px) {
+                        font-size: 14px;
+                        height: 90px;
+                        width: 90px;
+                        margin: 0px 3px;
+                    }
+
+                    @media (max-width:480px) {
+                        margin-bottom: 5px;
+                    }
+
+                    span {
+                        font-size: 40px;
+                        font-weight: 700;
+                        color: #8747bf;
+                        height: 35px;
+
+                        @media (max-width:580px) {
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+        }
+
+        ul {
+            margin-top: 45px;
+
+            li {
+                display: inline-block;
+                margin-right: 65px;
+                font-size: 22px;
+                font-weight: 600;
+
+                @media (max-width:580px) {
+                    font-size: 18px;
+                }
+
+                @media (max-width:480px) {
+                    margin-right: 0;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                i {
+                    margin-right: 10px;
+                    color: #8747bf;
+                    text-align: center;
+                    padding: 15px;
+                    position: relative;
+                    font-size: 30px;
+                    z-index: 9;
+
+                    &::after {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        content: "";
+                        height: 100%;
+                        z-index: -9;
+                        background: url(../../images/conferrence/icon/1.png) no-repeat center center / cover;
+                    }
+                }
+            }
+        }
+    }
+}

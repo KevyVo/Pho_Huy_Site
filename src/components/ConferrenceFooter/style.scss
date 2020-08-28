@@ -1,0 +1,43 @@
+.conferrenceFooterArea {
+    height: 395px;
+    text-align: center;
+    z-index: 9;
+    padding: 180px 0px 100px;
+    position: relative;
+    background: #fcf9ff url(../../images/conferrence/bg/2.png) no-repeat center center / cover;
+    @media (max-width:767px) {
+        height: 355px;
+        padding: 165px 0px 80px;
+    }
+    &::before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        opacity: .65;
+        content: "";
+    }
+
+    &::after {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 60px;
+        background: url(../../images/conferrence/bg/3.png) no-repeat center center / cover;
+        content: "";
+    }
+    img{
+        @media (max-width:767px) {
+            height: 30px;
+        }
+    }
+    p {
+        font-size: 18px;
+        font-weight: 600;
+        color: #fff;
+        margin-top: 25px;
+    }
+}

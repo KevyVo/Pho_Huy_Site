@@ -1,0 +1,108 @@
+.sarviceArea{
+    padding: 120px 0px 160px;
+    .slideWrapper{
+        margin: 0px -5px;
+        .serviceMainWrap{
+            padding: 0px 5px;
+            .serviceWrap{
+                background: #fff;
+                padding: 80px 20px;
+                border: 1px solid #f1f1f1;
+                border-radius: 10px;
+                position: relative;
+                z-index: 9;
+                margin: 10px 1px;
+                
+                .bgShape{
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: #4095ff;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    z-index: -9;
+                    opacity: 0;
+                    &::before{
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        width: 110px;
+                        height: 110px;
+                        background: #328af9;
+                        content: "";
+                        border-bottom-left-radius: 100%;
+                    }
+                    &::after{
+                        position: absolute;
+                        left: 50%;
+                        bottom: -102px;
+                        width: 205px;
+                        height: 150px;
+                        border-radius: 50%;
+                        content: "";
+                        background: #328af9;
+                        transform: translateX(-50%);
+                        -webkit-transform: translateX(-50%);
+                        -moz-transform: translateX(-50%);
+                    }
+                }
+                
+                h3{
+                    font-size: 20px;
+                    font-weight: 700;
+                    margin-bottom: 20px;
+                }
+                p{
+                    margin-bottom: 20px;
+                }
+                a{
+                    display: inline-block;
+                    font-size: 17px;
+                    font-weight: 600;
+                }
+                &:hover{
+                    .bgShape{
+                        opacity: 1;
+                    }
+                    h3,
+                    p,
+                    a{
+                        color: #fff;
+                    }
+                }
+                
+            }
+            
+        }
+    }
+    .slick-dots {
+        bottom: -40px;
+
+        li {
+            margin: 0 2px;
+            height: auto;
+            width: auto;
+
+            button {
+                background-color: #eee;
+                width: 30px;
+                height: 10px;
+                border: none;
+                border-radius: 10px;
+
+                &::before {
+                    display: none !important;
+                }
+            }
+
+            &.slick-active {
+                button {
+                    background-color: #4095ff;
+                    width: 40px;
+                }
+            }
+        }
+    }
+}

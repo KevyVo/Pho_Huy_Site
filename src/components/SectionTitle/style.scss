@@ -1,0 +1,155 @@
+.sectionTitle {
+    text-align: center;
+    margin-bottom: 40px;
+
+    h2 {
+        font-size: 26px;
+        text-transform: capitalize;
+        font-weight: 700;
+        padding-bottom: 25px;
+        position: relative;
+        margin-bottom: 25px;
+        line-height: 20px;
+
+        @media (max-width:450px) {
+            line-height: 30px;
+        }
+    }
+
+    p {
+        font-weight: 500;
+        margin-bottom: 0;
+    }
+
+    &.sectionTitleStyleTwo {
+
+        h2,
+        p {
+            color: #fff;
+        }
+
+        span.line {
+            background: #fff;
+        }
+    }
+
+    &.conferrenceSectionTitle {
+        h2 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 35px;
+            line-height: 24px;
+            padding: 0;
+
+            span {
+                display: none;
+            }
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 40px;
+        }
+    }
+    &.financeSectionTitle{
+        h2{
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 25px;
+            margin-bottom: 30px;
+            display: inline-block;
+            padding-bottom: 0;
+            @media (max-width:767px) {
+                font-size: 26px;
+            }
+            span{
+                &.line{
+                    display: none;
+                }
+            }
+        }
+    }
+    &.rastaurentSectionTitle{
+        h2{
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 30px;
+            padding-bottom: 40px;
+            margin-bottom: 30px;
+            line-height: 22px;
+            @media (max-width:576px) {
+                font-size: 24px;
+            }
+            span{
+                &.line{
+                    width: 100px;
+                    height: 5px;
+                    border-radius: 10px;
+                    background: #ffbb56;
+                    &::before{
+                        position: absolute;
+                        left: 50%;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        bottom: -7px;
+                        background: #ffbb56;
+                        content: "";
+                        transform: translateX(-50%);
+                        -webkit-transform: translateX(-50%);
+                        -moz-transform: translateX(-50%);
+                    }
+                }
+                &.colorText{
+                    color: #ffbb56;
+                    text-transform: uppercase;
+                    font-weight: 400;
+                }
+            }
+        }
+        p{
+            font-size: 16px;
+            font-weight: 500;
+            padding: 0px 50px;
+            margin-bottom: 50px;
+            @media (max-width:576px) {
+                padding: 0;
+            }
+        }
+    }
+    &.travelSectionTitle{
+        span{
+            &.line{
+                width: 45px;
+                background: #73ae20;
+                height: 3px;
+            }
+        }
+    }
+    &.yogaSectionTitle{
+        h2{
+            font-size: 28px;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: 25px;
+            line-height: 20px;
+            margin-bottom: 0;
+            @media (max-width:767px) {
+                font-size: 24px;
+            }
+            span{
+                display: none;
+            }
+        }
+        p{
+            font-size: 17px;
+            font-weight: 500;
+            font-style: italic;
+            margin-bottom: 0px;
+            @media (max-width:767px) {
+                font-size: 15px;
+            }
+        }
+    }
+}

@@ -1,0 +1,56 @@
+.bannerArea{
+    padding: 90px 0px 100px;
+    position: relative;
+    z-index: 9;
+    text-align: center;
+    background: url(../../images/travel/bg/1.jpg)no-repeat center center / cover;
+    &::before{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #353535;
+        content: "";
+        z-index: -9;
+        opacity: .85;
+    }
+    .contentWrap{
+        h2{
+            font-size: 26px;
+            line-height: 36px;
+            color: #fff;
+            font-weight: 600;
+            margin-bottom: 20px;
+            @media (max-width:767px) {
+                font-size: 22px;
+                line-height: 32px;
+            }
+            span{
+                display: block;
+                @media (max-width:400px) {
+                    display: inline-block;
+                }
+            }
+        }
+        p{
+            color: #fff;
+            font-weight: 500;
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+        a{
+            display: inline-block;
+            padding: 10px 35px;
+            border: 2px solid #fff;
+            font-size: 16px;
+            font-weight: 500;
+            color: #fff;
+            border-radius: 5px;
+            &:hover{
+                background: #fff;
+                color: #9acb56;
+            }
+        }
+    }
+}

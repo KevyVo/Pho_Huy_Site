@@ -1,0 +1,142 @@
+.reastaurentSliderArea{
+    height: 965px;
+    padding-top: 50px;
+    position: relative;
+    @media (max-width:1199px) {
+        height: 420px;
+        background: #fafafa;
+        padding: 101px 0;
+    }
+    @media (max-width:991px) {
+        height: unset;
+        padding: 120px 0px;
+    }
+    .restaurentSlideWrapper{
+        .sliderContent{
+            text-align: center;
+            h2{
+                font-size: 38px;
+                font-weight: 700;
+                margin-bottom: 35px;
+                line-height: 30px;
+                text-transform: uppercase;
+                @media (max-width:767px) {
+                    line-height: 45px;
+                }
+                span{
+                    font-weight: 400;
+                    color: #ffbb56;
+                }
+            }
+            p{
+                font-size: 20px;
+                font-weight: 400;
+                text-transform: lowercase;
+                line-height: 30px;
+                text-align: center;
+                margin-bottom: 30px;
+                padding: 0px 100px;
+                @media (max-width:1199px) {
+                    padding: 0;
+                }
+                @media (max-width:991px) {
+                    padding: 0px 100px;
+                }
+                @media (max-width:767px) {
+                    padding: 0px 0px;
+                    font-size: 15px;
+                    line-height: 26px;
+                }
+            }
+            a{
+                display: inline-block;
+                padding: 15px 50px;
+                text-transform: uppercase;
+                color: #fff;
+                background: #ffbb56;
+                border-radius: 30px;
+                font-weight: 600;
+                border: 2px solid #ffbb56;
+                &:hover{
+                    background: transparent;
+                    color: #ffbb56;
+                }
+                i{
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+    .sliderImage{
+        height: 390px;
+        margin-top: 65px;
+        margin-bottom: 240px;
+        background: url(../../images/resturent/slider/1.png) no-repeat;
+        text-align: center;
+        .heroImage{
+            position: relative;
+            top: 125px;
+            left: -20px;
+            img{}
+        }
+    }
+
+    .slick-dots {
+        bottom: 30px;
+        text-align: right;
+        position: absolute;
+        right: 17%;
+        bottom: -170px;
+        transform: translateY(-50%);
+        width: 100px;
+        @media (max-width:1199px) {
+            bottom: 30px;
+            position: absolute;
+            right: 0;
+            bottom: 50%;
+            transform: translateY(50%);
+            width: 65px;
+        }
+        @media (max-width:767px) {
+            display: none !important;
+        }
+
+        li {
+            margin: 0 2px;
+            height: auto;
+            width: auto;
+            display: block;
+            margin-bottom: 10px;
+            button {
+                height: 25px;
+                width: 25px;
+                border: 2px solid #ffbb56;
+                border-radius: 50%;
+                position: relative;
+
+                &::before {
+                    position: absolute;
+                    right: 30px;
+                    left: auto;
+                    top: 50%;
+                    width: 0px;
+                    height: 2px;
+                    background: #ffbb56;
+                    content: "";
+                    transform: translateY(-50%);
+                    -webkit-transform: translateY(-50%);
+                    -moz-transform: translateY(-50%);
+                }
+            }
+
+            &.slick-active {
+                button {
+                    background: #ffbb56;
+                    &::before{
+                        width: 40px;
+                    }
+                }
+            }
+        }
+    }
+}

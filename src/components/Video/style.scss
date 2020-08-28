@@ -1,0 +1,34 @@
+.videoArea {
+    padding: 120px 0px;
+    background: #f9f9f9;
+
+    .videoWrap {
+        position: relative;
+        padding-top: 85px;
+
+        .videoImages {
+            position: absolute;
+            top: 0;
+            width: 100%;
+
+            span {
+                position: absolute;
+                left: 50%;
+                height: 60px;
+                width: 60px;
+                line-height: 58px;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                -webkit-transform: translate(-50%, -50%);
+                -moz-transform: translate(-50%, -50%);
+                display: inline-block;
+                border-radius: 50%;
+                background: rgba(255, 255, 255, .95);
+                text-align: center;
+                box-shadow: 0 0 0 rgba(255, 255, 255, 0.30);
+                animation: pulse 1s infinite;
+                cursor: pointer;
+            }
+        }
+    }
+}

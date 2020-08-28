@@ -1,0 +1,63 @@
+.rastaurentAboutArea{
+    padding: 100px 0px 130px;
+    @media (max-width:1024px) {
+        padding: 120px 0px;
+    }
+    .aboutWrapper{
+        position: relative;
+        overflow: hidden;
+        .aboutContent{
+            padding: 95px 0px;
+            @media (max-width:1024px) {
+                padding: 35px 0px;
+            }
+            @media (max-width:991px) {
+                padding: 0;
+            }
+            h3{
+                font-size: 20px;
+                margin-bottom: 0;
+                font-weight: 600;
+                span{
+                    color: #ffbb56;
+                }
+            }
+            h2{
+                line-height: 34px;
+                font-size: 24px;
+                font-weight: 700;
+                margin-bottom: 25px;
+            }
+            p{
+                margin-bottom: 25px;
+                font-size: 16px;
+                line-height: 26px;
+            }
+            a{
+                display: inline-block;
+                padding: 10px 25px;
+                border-radius: 30px;
+                background: #ffbb56;
+                color: #fff;
+                margin-top: 10px;
+                font-weight: 600;
+                border: 2px solid #ffbb56;
+                &:hover{
+                    background: transparent;
+                    color: #ffbb56;
+                }
+                i{
+                    margin-left: 5px;
+                }
+            }
+        }
+        .aboutImg{
+            position: absolute;
+            left: -15px;
+            background: url(../../images/resturent/about/1.jpg)no-repeat center center / cover;
+            top: 0;
+            height: 100%;
+            width: 50%;
+        }
+    }
+}

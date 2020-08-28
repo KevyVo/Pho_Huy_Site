@@ -1,0 +1,28 @@
+.conferrenceFaqArea {
+    padding: 120px 0px 90px;
+    background: url(../../images/conferrence/bg/2.jpg)no-repeat center / cover;
+
+    .faqWrap {
+        margin-bottom: 30px;
+        border: 1px solid #e5e5e5;
+        padding: 20px;
+        transition: all .3s;
+        &:hover{
+            transform: translateY(-5px);
+            box-shadow: 1px 0px 25px rgba(0,0,0,.1);
+            border: 1px solid transparent;
+        }
+        h3 {
+            font-size: 17px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            
+        }
+
+        p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 0;
+        }
+    }
+}
